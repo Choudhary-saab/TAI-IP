@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"
+        android:paddingStart="7dp"
+        android:hint="Enter a new task"
+        android:paddingEnd="7dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/edittext"
+        android:text="Pick Date"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/button_pick_date"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/button_pick_date"
+        android:text="Pick Time"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/button_pick_time"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/button_pick_time"
+        android:text="Save"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button_save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_save"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</RelativeLayout>
